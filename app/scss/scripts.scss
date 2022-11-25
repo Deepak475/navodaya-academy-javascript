@@ -1,0 +1,27 @@
+body {
+  &.scripts {
+    background: rgb(56,34,214);
+    background: linear-gradient(95deg, rgba(56,34,214,1) 35%, rgba(152,87,255,1) 100%);
+    // background-image: url("../images/unplash-bg.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: $white;
+    font-family: 'muli';
+
+    h1 {
+      font-size: 3rem;
+      text-transform: uppercase;
+    }
+  }
+}

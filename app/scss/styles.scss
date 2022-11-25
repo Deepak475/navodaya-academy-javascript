@@ -1,0 +1,19 @@
+@use 'navodaya';
+
+.wrapper {
+  .container {
+    width: 960px;
+    margin: 0 auto;
+
+    .courses {
+      background-color: pink;
+    }
+  }
+}
+
+.columns {
+  .navodaya {
+    color: red;
+    background-color: blue;
+  }
+}

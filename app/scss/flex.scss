@@ -1,0 +1,201 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  &.flex {
+    background-image: linear-gradient( 95.2deg, rgba(173,252,234,1) 26.8%, rgba(192,229,246,1) 64% );
+  }
+}
+
+main {
+  max-width: 1150px;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid blue;
+}
+h1:not(.info-title) {
+  text-align: center;
+  font-size: 3rem;
+  margin: 0;
+  // font-family: 'Dancing Script', cursive;
+  // font-family: navodaya;
+}
+.flex-container {
+  background-image: linear-gradient(to right, #ff6e7f, #bfe9ff);
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: row;
+  height: 100vh;
+  padding-top: 30px;
+
+  .flex-item {
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px rgb(34 34 34 / 50%);
+    overflow: hidden;
+    font-size: 1.3rem;
+    margin: 20px;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.position-box {
+  position: relative;
+  width: 100%;
+  height: 800px;
+  border: 5px solid maroon;
+
+  .box-one, .box-two {
+    width: 150px;
+    height: 150px;
+    color: #fff;
+    position: absolute;
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4,189,228,1) 0%, rgba(2,83,185,1) 100.2% );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .box-one {
+    bottom: 0;
+    right: 30px;
+  }
+
+  .box-two {
+    right: 30px;
+  }
+}
+
+.calculater-wrapper {
+  border: 1px solid blue;
+  width: 100%;
+  height: 600px;
+  display: inline-block;
+
+  .calc-form {
+    padding: 20px;
+
+    p {
+      color: red;
+      font-size: 20px;
+      display: inline;
+
+      span {
+        font-size: 30px;
+      }
+    }
+
+    input {
+      border: 1px solid maroon;
+      padding: 10px;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #ddd;
+    padding: 10px;
+    max-width: 150px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .button-wrapper {
+
+  }
+}
+
+/* For Form Styling */
+.form-action {
+  width: 100%;
+  display: inline-block;
+  padding: 20px;
+
+  .form-group {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin-top: 60px;
+    margin-bottom: 90px;
+    font-size: 18px;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      content: "All fields are required.";
+      left: 0;
+      top: -30px;
+      color: green;
+      font-size: 14px;
+    }
+
+    &:after {
+      position: absolute;
+      content: "Please fill your details before submit.";
+      left: 0;
+      bottom: -30px;
+      color: red;
+      font-size: 14px;
+    }
+
+    input {
+      border: 1px solid #ff008b;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #f17b7b;
+
+      &:focus {
+        border: 0;
+        outline: 2px solid #dc2204;
+      }
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .flex-container {
+    background-color: blue;
+
+    .flex-item {
+      font-size: 3rem;
+      background-color: white;
+    }
+  }
+}
+
+@media (min-width: 651px) and (max-width: 900px) {
+  .flex-container {
+    background-color: orange;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1370px) {
+  .flex-container {
+    background-color: green;
+  }
+}
+
+@media (min-width: 1371px) {
+  .flex-container {
+    background-color: #6a9dc982;
+  }
+}
+
+// Custom Fonts
+
+@font-face {
+  font-family: navodaya;
+  src: url("../fonts/DancingScript-Bold.ttf");
+}

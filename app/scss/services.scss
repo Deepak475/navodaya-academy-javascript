@@ -1,0 +1,50 @@
+.wrapper {
+  .container {
+    width: 1150px;
+
+    .courses {
+      background-color: $bg-color;
+    }
+  }
+}
+
+// Nesting
+
+.columns {
+  margin-bottom: 30px;
+  padding: $padding15;
+
+  &:not(.column-3) {
+    border: 3px solid green;
+  }
+
+  h3 {
+    color: $white;
+    background-color: $bg-color;
+
+    &:hover {
+      color: $base-color;
+    }
+  }
+
+  &.columns {
+    &__2 {
+      border-color: blue;
+    }
+    &__4 {
+        border-color: yellow;
+    }
+  }
+}
+
+.alert {
+  &-tomato {
+    @include theme;
+  }
+  &-grey {
+    @include theme($nikki: grey);
+  }
+  &-green {
+    @include theme($nikki: green);
+  }
+}

@@ -1,0 +1,13 @@
+header, footer {
+  background: rgb(56,34,214);
+  background: linear-gradient(139deg, rgba(56,34,214,1) 35%, rgba(152,87,255,1) 100%);
+  box-shadow: rgb(149 157 165 / 20%) 0px 8px 24px;
+  padding: 15px 0;
+  margin: 0;
+
+  p {
+    margin: 0;
+    text-align: center;
+    color: $white;
+  }
+}

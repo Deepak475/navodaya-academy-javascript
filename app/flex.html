@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sessions - Flex, RWD, Custom Fonts</title>
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="./css/application.min.css">
+</head>
+
+<body class="flex">
+  <main>
+    <h1>Flex Items</h1>
+    <div class="flex-container">
+      <div class="flex-item">1</div>
+      <div class="flex-item">2</div>
+      <div class="flex-item">3</div>
+      <div class="flex-item">4</div>
+    </div>
+    <div class="position-box">
+      <div class="box-one">1</div>
+      <div class="box-two">2</div>
+      <form class="form-action">
+        <div class="form-group">
+          <label for="firstName">
+            First Name:
+            <input type="text" name="firstName" id="firstName" value="">
+          </label>
+        </div><!-- End here form-group class name -->
+        <div class="form-group">
+          <label for="lastName">
+            Last Name:
+            <input type="text" name="lastName" id="lastName" value="">
+          </label>
+        </div><!-- End here form-group class name -->
+        <div class="form-group">
+          <label for="dob">
+            DOB:
+            <input type="datetime" name="dob" id="dob" value="">
+          </label>
+        </div><!-- End here form-group class name -->
+        <div class="form-group">
+          <label for="contact">
+            Contact:
+            <input type="number" name="contact" id="contact" value="">
+          </label>
+        </div><!-- End here form-group class name -->
+        <div class="form-group">
+          <label for="gender">
+            Male:
+            <input type="radio" name="gender" value="">
+          </label>
+          <label for="gender">
+            Female:
+            <input type="radio" name="gender" value="">
+          </label>
+        </div><!-- End here form-group class name -->
+        <div class="form-group">
+          <label for="hobbies">
+            Hobbies:
+            <input type="checkbox" name="cricket" id="hobbies" value=""> Cricket
+            <input type="checkbox" name="drawing" id="hobbies" value="">Drawing
+            <input type="checkbox" name="traveling" id="hobbies" value="">Traveling
+          </label>
+        </div><!-- End here form-group class name -->
+      </form><!-- End here form-action class name -->
+    </div>
+    <div class="calculater-wrapper">
+      <form class="calc-form">
+        <input type="number" id="firstVal" placeholder="Enter your first value" name="firstVal" value="">
+        <input type="text" id="calculation" placeholder="Operation Value" name="calculation" value="">
+        <input type="number" id="lastVal" placeholder="Enter your last value" name="lastVal" value="">
+        <a href="javascript:void(0)" id="eql" class="btn">=</a>
+        <p>Results: <span id="results"></span></p>
+      </form>
+
+      <div class="button-wrapper">
+        <a href="#" class="btn">+</a>
+        <a href="#" class="btn">-</a>
+        <a href="#" class="btn">/</a>
+        <a href="#" class="btn">*</a>
+      </div>
+    </div>
+  </main>
+
+  <script src="./js/calculator.js"></script>
+</body>
+</html>

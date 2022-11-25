@@ -1,0 +1,6 @@
+// Mixins
+@mixin theme($nikki: tomato) {
+  background-color: $nikki;
+  color: $white;
+  padding: $padding15;
+}
